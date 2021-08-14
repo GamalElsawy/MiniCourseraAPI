@@ -11,8 +11,6 @@ public class CourseService {
 	@Autowired
 	private CourseRepository courseRepository;
 	
-	//private List<Topic> topics = new ArrayList<>(Arrays.asList(new Topic("Java", "Java Course", "This is a java course")));
-	
 	public List<Course> getAllCourses(String topicId) {	
 		List<Course> courses = new ArrayList<>();
 		courseRepository.findByTopicId(topicId).
