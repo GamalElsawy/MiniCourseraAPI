@@ -1,9 +1,12 @@
-package com.example.demo.topic;
+package com.example.demo.service;
 
 import java.util.*;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
+
+import com.example.demo.entity.Topic;
+import com.example.demo.repository.TopicRepository;
 
 @Service
 public class TopicService {

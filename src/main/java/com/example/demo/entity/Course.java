@@ -1,7 +1,8 @@
-package com.example.demo.course;
+package com.example.demo.entity;
 
 import javax.persistence.*;
-import com.example.demo.topic.Topic;
+
+//import com.example.demo.topic.Topic;
 
 @Entity
 public class Course {

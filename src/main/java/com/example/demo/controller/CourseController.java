@@ -1,11 +1,15 @@
-package com.example.demo.course;
+package com.example.demo.controller;
 
 import java.util.*;
+
+
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 
-import com.example.demo.topic.Topic;
+import com.example.demo.entity.Course;
+import com.example.demo.entity.Topic;
+import com.example.demo.service.CourseService;
 
 @RestController
 public class CourseController {
