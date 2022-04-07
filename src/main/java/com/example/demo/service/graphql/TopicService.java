@@ -5,6 +5,7 @@ import com.example.demo.repository.TopicRepository;
 import lombok.AllArgsConstructor;
 import org.springframework.stereotype.Service;
 
+import java.util.ArrayList;
 import java.util.List;
 
 @Service
@@ -13,7 +14,9 @@ public class TopicService {
     private TopicRepository topicRepository;
 
     public List<Topic> getAllTopics() {
-        return topicRepository.findAll();
+        List<Topic> topics = new ArrayList<>();
+        topicRepository.findAll().forEach(topics::add);
+        return topics;
     }
 
 }
