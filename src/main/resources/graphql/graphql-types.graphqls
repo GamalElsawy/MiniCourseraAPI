@@ -1,0 +1,29 @@
+
+
+
+type Topic {
+    id: String
+    name: String
+    description: String
+}
+
+type Course {
+    id: String
+    name: String
+    description: String
+    topic: Topic
+}
+type Lesson {
+    id: String
+    name: String
+    description: String
+    course: Course
+}
+
+type Query {
+    getAllTopics: [Topic]
+    getAllCourses: [Course]
+    getAllLessons: [Lesson]
+}
+
+

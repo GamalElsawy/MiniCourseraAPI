@@ -1,8 +1,0 @@
-
-
-
-type topic {
-    id: String
-    name: String
-    description: String
-}

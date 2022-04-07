@@ -11,7 +11,7 @@ import java.util.List;
 @Component
 @AllArgsConstructor
 public class TopicQuery implements GraphQLQueryResolver {
-    private TopicService topicService;
+    private final TopicService topicService;
 
     public List<Topic> getAllTopics() {
         return topicService.getAllTopics();
