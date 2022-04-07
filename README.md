@@ -5,4 +5,4 @@ A mock api for the popular Coursera website.
  - Spring Boot & Java 8
  - Maven
  - RestAPI
- - PostresDB
+ - PostgresDB
